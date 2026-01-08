@@ -4,18 +4,6 @@
     box-sizing: border-box;
 }
 
-.btn {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 12px 16px;
-    color: white;
-    font: 600 16px Inter;
-    border: none;
-    border-radius: 5px;
-    background-color: #30B868;
-}
-
 header {
     max-width: 1600px;
     margin-inline: auto;
@@ -44,6 +32,18 @@ header {
     text-decoration: none;
 }
 
+.nav button {
+    border: none;
+    padding: unset;
+    background-color: #30B868;
+    padding: 12px 16px;
+    border-radius: 4px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
 /* Hero */
 
 .hero {
@@ -57,53 +57,23 @@ header {
     max-width: 770px;
     margin-inline: auto;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
 }
 
-.content .text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-}
-
-.text-container .info {
-    display: flex;
+.content .info {
+    display: inline-flex;
     gap: 6px;
     padding: 8px 12px;
     background-color: white;
     border-radius: 100px;
-}
-
-.text-container .info p {
     color: #30B868;
     font: 500 16px Inter;
 }
 
-.text-container h1 {
+.content h1 {
     color: white;
     font: 700 72px/84px Inter;
 }
 
-.text-container h1 span {
+.content h1 span {
     color: #30b868;
-}
-
-.text-container p {
-    font: 400 18px/30px Inter;
-    color: white;
-}
-
-.content .btn-container {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-}
-
-.content .btn-container .transparent {
-    border: 1px solid white;
-    background-color: transparent;
 }
