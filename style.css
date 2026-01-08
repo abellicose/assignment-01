@@ -239,7 +239,7 @@ header {
 .soln .content ul li {
     font: 500 16px Inter;
     color: rgba(0, 25, 49, 1);
-    list-style: url("../assets/CheckCircle.png") inside;
+    list-style: url("./assets/CheckCircle.png") inside;
 }
 
 .early-access {
