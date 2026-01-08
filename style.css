@@ -14,11 +14,30 @@
     border: none;
     border-radius: 5px;
     background-color: #30B868;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition-duration: 0.3s;
+}
+
+.btn:hover {
+    background-color: #249452;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+    max-width: 1360px;
+    margin-inline: auto;
+    padding-block: 60px;
+}
+
+.section-title {
+    font: 700 48px Inter;
 }
 
 header {
     max-width: 1600px;
     margin-inline: auto;
+    padding-block: 16px;
 }
 
 .nav {
@@ -34,6 +53,13 @@ header {
 
 .nav ul li {
     list-style: none;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 5px;
+    transition-duration: 0.3s;
+}
+
+.nav ul li:hover {
+    border-bottom: 3px solid #30B868;
 }
 
 .nav ul li a {
@@ -63,14 +89,14 @@ header {
     gap: 32px;
 }
 
-.content .text-container {
+.hero .content .text-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
 }
 
-.text-container .info {
+.hero .content .text-container .info {
     display: flex;
     gap: 6px;
     padding: 8px 12px;
@@ -78,32 +104,230 @@ header {
     border-radius: 100px;
 }
 
-.text-container .info p {
+.hero .content .text-container .info p {
     color: #30B868;
     font: 500 16px Inter;
 }
 
-.text-container h1 {
+.hero .content .text-container h1 {
     color: white;
     font: 700 72px/84px Inter;
 }
 
-.text-container h1 span {
+.hero .content .text-container h1 span {
     color: #30b868;
 }
 
-.text-container p {
+.hero .content .text-container p {
     font: 400 18px/30px Inter;
     color: white;
 }
 
-.content .btn-container {
+.hero .content .btn-container {
     display: flex;
     gap: 16px;
     align-items: center;
 }
 
-.content .btn-container .transparent {
+.hero .content .btn-container .transparent {
     border: 1px solid white;
     background-color: transparent;
+}
+
+/* issue */
+
+.issue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+}
+
+.issue .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.issue .header p {
+    font: 16px Inter;
+    color: #627382;
+}
+
+.cards {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.card {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+
+.card img {
+    background-color: #f95555;
+    padding: 14px;
+    border-radius: 100px;
+}
+
+.card h3 {
+    font: 600 24px Inter;
+}
+
+.card p {
+    font: 16px Inter;
+    color: #627382;
+}
+
+/* soln */
+.soln {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.soln img {
+    border-radius: 12px;
+}
+
+.soln .content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.soln .content div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.soln .content .title {
+    text-transform: uppercase;
+    font: 500 16px Inter;
+    color: #30B868;
+}
+
+.soln .content h2 {
+    font: 700 48px/58px Inter;
+    color: #001931;
+}
+
+.soln div p {
+    font: 16px Inter;
+    color: #627382;
+}
+
+.soln .content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.soln .content ul li {
+    font: 500 16px Inter;
+    color: rgba(0, 25, 49, 1);
+    list-style: url("../assets/CheckCircle.png") inside;
+}
+
+.early-access {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    padding: 80px 40px;
+    border-radius: 12px;
+    background: rgba(247, 246, 242, 1);
+    margin-block: 60px 120px;
+}
+
+.early-access .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.early-access .text-container p {
+    font: 400 16px/24px Inter;
+    color: #627382;
+}
+
+.early-access .btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.early-access .btn-container p {
+    font: 400 16px Inter;
+    color: #627382;
+}
+
+.early-access .btn-container .btn {
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    background-color: rgb(0, 25, 49);
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 84px;
+    padding-block: 120px 30px;
+}
+
+footer .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .social {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+footer .content h3 {
+    color: white;
+    font: 500 20px Inter;
+}
+
+footer .logo {
+    display: flex;
+    gap: 16px;
+}
+
+footer .copyright-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+footer .copyright-section hr {
+    width: 100%;
+    border: 1px solid rgb(220, 231, 235);
+    opacity: 0.2;
+}
+
+
+footer .copyright-section p {
+    color: rgb(250, 250, 250);
+    font: 400 16px Inter;
 }
